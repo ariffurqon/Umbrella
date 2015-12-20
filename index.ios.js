@@ -11,8 +11,18 @@ var {
 
 var Umbrella = React.createClass({
   render: function(){
-    return <MapView style={styles.map}></MapView>
-  }
+    var pins = [{
+      latitute: 37,
+      longitude: -95
+    }];
+    
+    return <MapView 
+        onRegionChangeComplete={this.onRegionChangeComplete}
+        style={styles.map}></MapView>
+  },
+  onRegionChangeComplete: function(region) {
+      console.log(region);
+  }   
 });
 
 var styles = StyleSheet.create ({
