@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var rootUrl = 'http://api.openweathermap.org/data/2.5/weather?APPID=a28addbd1088ee7ca59fba773595d76d';
+var rootUrl = 'http://api.openweathermap.org/data/2.5/weather?&appid=2de143494c0b295cca9337e1e96b00e0';
 
 var kelvinToF = function(kelvin) {
   return Math.round((kelvin - 273.15) * 1.8 + 32) + ' ˚F'
